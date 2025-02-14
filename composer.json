@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/zero-trust-rbac-matrix",
+    "description": "Ultra-fast Attribute-Based Access Control (ABAC) and Role-Based Access Control (RBAC) engine with dynamic contextual rule evaluation.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\AuthMatrix\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\AuthMatrix\\PackageServiceProvider"
+            ]
+        }
+    }
+}
